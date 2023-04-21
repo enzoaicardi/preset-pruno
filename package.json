@@ -1,0 +1,63 @@
+{
+  "name": "@enzoaicardi/preset-pruno",
+  "version": "0.1.0",
+  "description": "Pixel to rem preset, fork of preset-mini",
+  "author": "Enzo Aicardi",
+  "license": "MIT",
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "unocss-pruno",
+    "preset-pruno"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./theme": {
+      "types": "./dist/theme.d.ts",
+      "require": "./dist/theme.cjs",
+      "import": "./dist/theme.mjs"
+    },
+    "./variants": {
+      "types": "./dist/variants.d.ts",
+      "require": "./dist/variants.cjs",
+      "import": "./dist/variants.mjs"
+    },
+    "./rules": {
+      "types": "./dist/rules.d.ts",
+      "require": "./dist/rules.cjs",
+      "import": "./dist/rules.mjs"
+    },
+    "./colors": {
+      "types": "./dist/colors.d.ts",
+      "require": "./dist/colors.cjs",
+      "import": "./dist/colors.mjs"
+    },
+    "./utils": {
+      "types": "./dist/utils.d.ts",
+      "require": "./dist/utils.cjs",
+      "import": "./dist/utils.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts",
+    "*.css"
+  ],
+  "dependencies": {
+    "@unocss/core": "0.51.5",
+    "@unocss/extractor-arbitrary-variants": "0.51.5"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  }
+}
