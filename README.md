@@ -35,13 +35,13 @@ import { defineConfig } from 'unocss'
 import { presetPruno } from '@enzoaicardi/preset-pruno'
 
 export default defineConfig({
-	cli: {
-		entry: {
-			patterns: [/* Paths of files you want to watch : **\/templates/*.{html,twig,liquig} */],
-			outFile: /* Output file path : assets/css/styles.css */
-		}
-	},
-	presets: [presetPruno()]
+    cli: {
+        entry: {
+            patterns: [/* Paths of files you want to watch : **\/templates/*.{html,twig,liquig} */],
+            outFile: /* Output file path : assets/css/styles.css */
+        }
+    },
+    presets: [presetPruno()]
 })
 ```
 
@@ -59,7 +59,7 @@ Last step, run the watcher and start coding.
 # Vscode
 
 If you are using **VSCode**, consider to use the unocss VSCode extension that can be really helpful.
-[https://marketplace.visualstudio.com/items?itemName=antfu.unocss](UnoCSS for VSCode)
+[UnoCss for VSCode](https://marketplace.visualstudio.com/items?itemName=antfu.unocss)
 
 # Why 'pruno'
 
